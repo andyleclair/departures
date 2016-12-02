@@ -1,0 +1,22 @@
+<h1>Departures!</h1>
+
+<div id="board">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Origin</th>
+        <th>Destination</th>
+        <th>Train #</th>
+        <th>Track #</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= for listing <- departures do %>
+        <%= render "listing.html", listing: listing %>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
