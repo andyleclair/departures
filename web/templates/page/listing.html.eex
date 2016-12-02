@@ -1,8 +1,8 @@
 <tr>
-  <td><%= epoch_to_local(@listing["ScheduledTime"]) %></td>
-  <td><%= @listing["Origin"] %></td>
-  <td><%= @listing["Destination"] %></td>
-  <td><%= @listing["Trip"] %></td>
-  <td><%= @listing["Track"] %></td>
-  <td><%= @listing["Status"] %></td>
+  <td><%= @listing[:scheduled_time] %></td>
+  <td><%= @listing[:origin] %></td>
+  <td><%= @listing[:destination] %></td>
+  <td><%= @listing[:trip] %></td>
+  <td><%= @listing[:track] %></td>
+  <td><%= @listing[:status] %></td>
 </tr>

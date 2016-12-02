@@ -19,7 +19,7 @@ defmodule Departures.Mixfile do
   def application do
     [mod: {Departures, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html,
-                    :cowboy, :logger, :gettext,
+                    :cowboy, :logger, :gettext, :nimble_csv,
                     :phoenix_ecto, :postgrex, :timex]]
   end
 
@@ -39,8 +39,9 @@ defmodule Departures.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
-     {:csv, "~> 1.4.0"},
-     {:timex, "~> 3.0"}]
+     {:nimble_csv, "~> 0.1.0"},
+     {:timex, "~> 3.0"},
+     {:httpoison, "~> 0.10.0"}]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.
